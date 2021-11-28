@@ -26,7 +26,7 @@ function login() {
         dataType: 'JSON',
 
 
-        url: "http://localhost:8081/api/user/" + credentials.email + "/" + credentials.clave,
+        url: "http://140.238.187.245:8081/api/user/" + credentials.email + "/" + credentials.clave,
 
         success: function (response) {
             if (response.name == 'NO DEFINIDO') {
@@ -109,7 +109,7 @@ function nuevousuario() {
         dataType: 'JSON',
         data: JSON.stringify(datos),
 
-        url: "http://localhost:8081/api/user/new",
+        url: "http://140.238.187.245:8081/api/user/new",
 
 
         success: function (response) {
