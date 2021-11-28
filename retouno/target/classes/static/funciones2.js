@@ -26,7 +26,7 @@ function validar2() {
       dataType: 'JSON',
       
   
-      url: "http://localhost:8081/api/user/" + credentials.email + "/" + credentials.clave,
+      url: "http://140.238.187.245:8081/api/user/" + credentials.email + "/" + credentials.clave,
   
       success: function (response) {
         if (response.name == 'NO DEFINIDO') {
