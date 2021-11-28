@@ -3,14 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WILLY WONKA</title>
+    <title>Willy Wonka | Login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="estilos.css">
-    <script type="text/javascript" src="script.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <script type="text/javascript" src="funciones2.js"></script>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
 </head>
 
 <body>
@@ -18,27 +17,30 @@
         <h1>Willy Wonka</h1>
         <h2>Fábrica de Chocolates</h2>
     </div>
-    <div class="body2">
-        <form action="" method="post" id="form">
-            <div>
-                <h1>Registro</h1>
-                <div class="grupo">
-                    <input type="email" name="email" id="email" required><span class="barra"></span><label
-                        for="">Email</label>
-                </div>
-                <div class="grupo">
-                    <input type="password" name="clave" id="clave" required><span class="barra"></span><label
-                        for="">Password</label>
-                </div>
-                <button type="submit" onclick="login()">Ingresar</button>
-                <br>
-                <br>
-                <div class=" pieformulario">
-                    <a>¿No tienes Cuenta?,</a><a href="newcuenta.html">Crea tu cuenta aquí</a>
-                </div>
+    <div class = "body2">
+        <div class="forma">
+            <h2>Inicio de Sesión</h2>
+
+            <div class="grupo">
+
+                <input type="text" name="email" id="email"><span class="barra"></span>
+                <label for="">E-mail</label>
+            </div>
+            <div class="grupo">
+
+                <input type="password" name="clave" id="clave"><span class="barra"></span>
+                <label for="">Contraseña</label>
             </div>
 
-        </form>
+            <button onclick="validar2()">Ingresar</button>
+
+            <p class="no-access ">
+                ¿No tienes una cuenta?
+                <a href="registro.html">Crea tu cuenta aqui</a>
+            </p>
+
+        </div>
+
     </div>
 
 </body>

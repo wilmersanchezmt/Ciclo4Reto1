@@ -1,7 +1,6 @@
 :root {
-    --colorTextos: #49454567;
+    --colorTextos: rgba(88, 48, 2);
 }
-
 
 *,
 ::before,
@@ -10,7 +9,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-/*color de fondo en degradado */
+
 body {
     min-height: 100vh;
     background-image: url(./WillyWonka.jpg);
@@ -23,11 +22,11 @@ body {
     align-items: center;
 }
 
-.body2 {
-    height: 400px;
+.namecompany {
     display: block;
-    justify-content: right;
-    padding: 20px 0;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px 0 0 0;
 }
 
 .namecompany h1 {
@@ -62,102 +61,96 @@ body {
     color: #fe8c00;
 
 }
-/*Tamaño del titulo Willy wonka*/
-h1{
-    text-align: center;
-    font-weight: 800;
-    font-family:monospace;
-    font-size: 300%
+
+.body2 {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0;
 }
-/*Tamaño del titulo Crear cuenta e inicio de sesion*/
-h2{
+
+h1 {
     text-align: center;
-    font-weight: 400;
+    font-weight: 60;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--colorTextos)
 }
-/*forma y color de la caja principal */
-.forma{
-    display: block;
-    background: #fff;
-    padding: 10px 0;
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+
+forma {
+    display: flex;
+    background: white;
+    padding: 20px 10px;
+    box-shadow: 0 0 60px rgba(88, 48, 2);
     border-radius: 10px;
 }
 
-.forma{
-    width: 60%;
+.forma {
+    width: 100%;
     margin: auto;
-    justify-content: right;
-}
-/*posicion de las cajas de los inputs */
-.grupo{
-    position: relative;
-    margin: 45px ;
 }
 
-input{
+forma .grupo {
+    position: relative;
+    margin: 45px;
+
+}
+
+input {
     background: none;
-    color: #c6c6c6;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
+    color: #cc0101;
+    font-size: 20px;
+    padding: 1px 6px 1px 2px;
     display: block;
     width: 100%;
     border: none;
-    border-bottom: 1px solid var(--colorTextos);
+    border-bottom: 1.5px solid var(--colorTextos);
 }
 
-input:focus{ 
+input:focus {
     outline: none;
-    color: #5e5d5d;
+    color: rgb(218, 100, 4);
 }
 
-label{
-    color: var(--colorTextos);
-    font-size: 16px;
+label {
+    color: #1efe00 ;
+    font-size: 18px;
     position: absolute;
     left: 5px;
-    top: 10px;
-    transition: 0.5s ease all;
+    top: 5px;
+    transition: 0.4s ease-in-out all;
     pointer-events: none;
 }
-/*Color de Nombre, email, contraseña.. etc 5e5d5d*/
+
 input:focus~label,
-input:valid~label{
+input:valid~label {
     top: -14px;
     font-size: 12px;
-    color: #fe8c00;
+    color: rgb(218, 4, 57);
 }
 
-.barra{
+.barra {
     position: relative;
     display: block;
     width: 100%;
 }
-/*Color barra animada en las cajas de ingreso de datos  */
-.barra::before{
+
+.barra::before {
     content: "";
     height: 2px;
     width: 0%;
     bottom: 0;
     position: absolute;
-    background: linear-gradient(to right, #B06AB3, #4568DC);
+    background: rgb(218, 100, 4);
     transition: 0.3s ease width;
     left: 0;
 }
 
-input:focus~.barra::before{
+input:focus~.barra::before {
     width: 100%;
 }
 
-/*ya tienes cuenta y no tienes cuenta */
-.no-access {
-    color:#11053d;
-    margin:20px 0px 20px 10%;
-    text-decoration:solid;
-    
-  }
-
-
-/*Botones crear cuenta e ingresar*/
 button {
     font-family: 'Times New Roman', Times, serif;
     display: block;
@@ -173,9 +166,17 @@ button {
     cursor: pointer;
 }
 
+.pieformulario{
+    display: flex;
+    justify-content: center;
+}
+
 @media screen and (max-width:500px){
     form{
         width: 80%;
     }
+.namecompany{    
+    background-color:  rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 20px rgb(255, 255, 255);
 }
-
+}
